@@ -53,6 +53,12 @@ $(document).ready(function () {
         { src: './img/portfolio_2.jpg' },
         { src: './img/portfolio_3.jpg' },
         { src: './img/portfolio_4.jpg' },
+        { src: './img/portfolio_5.jpg' },
+        { src: './img/portfolio_6.jpg' },
+        { src: './img/portfolio_7.jpg' },
+        { src: './img/portfolio_8.jpg' },
+        { src: './img/portfolio_9.jpg' },
+        { src: './img/portfolio_10.jpg' },
       ],
     })
   }
@@ -95,7 +101,7 @@ $(document).ready(function () {
 
   if ($('#countdown').length) {
     // Set the date we're counting down to
-    var countDownDate = Date.parse('25 Oct 2021 19:00:00')
+    var countDownDate = Date.parse('25 Oct 2021 09:00:00')
 
     // Update the count down every 1 second
     var x = setInterval(function () {

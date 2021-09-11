@@ -58,7 +58,7 @@ Contact: https://themeforest.net/user/regediter
 }
 #slider,
 #video-bg {
-  min-height: 800px;
+  min-height: 100vh;
 }
 #slider,
 #comment,
@@ -1437,13 +1437,13 @@ select.form-control:not([size]):not([multiple]) {
 .scrollup {
   background: none repeat scroll 0 0 #f2f2f2;
   border-radius: 3px;
-  bottom: 26px;
+  bottom: 10px;
   display: none;
   height: 40px;
   position: fixed;
   cursor: pointer;
   z-index: 10;
-  right: 26px;
+  right: 10px;
   width: 40px;
 }
 .scrollup i {

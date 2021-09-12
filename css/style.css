@@ -556,8 +556,8 @@ footer h2 {
 /* 7 Comment Section
 ==================================================== */
 #comment {
-  background: url('../img/comment_bg.jpg') no-repeat fixed center center / cover
-    rgba(0, 0, 0, 0);
+  background: url('../img/comment_bg.jpeg') no-repeat fixed center center /
+    cover rgba(0, 0, 0, 0);
 }
 #comment h3 {
   font-weight: 200;

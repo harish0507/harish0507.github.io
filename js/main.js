@@ -5,6 +5,26 @@ $(window).on('load', function () {
   'use strict'
   // Load the page and wait 1s.
   $('#loader').delay(1000).fadeOut('slow')
+
+  const search = location.search.substring(1)
+  const query = search
+    ? JSON.parse(
+        '{"' +
+          decodeURI(search)
+            .replace(/"/g, '\\"')
+            .replace(/&/g, '","')
+            .replace(/=/g, '":"') +
+          '"}'
+      )
+    : {}
+
+  if (query.t === 'i') {
+    $('.invite').removeClass('d-none')
+    $('.uninvite').addClass('d-none')
+  } else {
+    $('.invite').addClass('d-none')
+    $('.uninvite').removeClass('d-none')
+  }
 })
 
 $(document).ready(function () {
@@ -41,13 +61,11 @@ $(document).ready(function () {
 
   if ($('#slider').length) {
     $('#slider').vegas({
-      delay: 7000,
+      delay: 5000,
       timer: true,
       shuffle: false,
-      firstTransition: 'fade2',
-      firstTransitionDuration: 2000,
       transition: 'fade2',
-      transitionDuration: 4000,
+      transitionDuration: 3000,
       slides: [
         { src: './img/portfolio_1.jpeg' },
         { src: './img/portfolio_2.jpeg' },

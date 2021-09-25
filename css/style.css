@@ -185,7 +185,7 @@ button i {
   padding: 1rem 1rem;
   -webkit-box-shadow: 0px 10px 14px -10px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 14px -10px rgba(0, 0, 0, 0.2);
-  z-index: 99999999;
+  z-index: 100;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(45, 44, 53, 1);
@@ -406,7 +406,7 @@ footer h2 {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 102;
 }
 #slider .vegas-wrapper {
   display: -webkit-box;
@@ -1432,19 +1432,30 @@ select.form-control:not([size]):not([multiple]) {
   opacity: 0.97;
 }
 
+#youtube-live {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  z-index: 101;
+}
+#youtube-live img {
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+}
+
 /* 23 Scroll Up
 ==================================================== */
 .scrollup {
   background: none repeat scroll 0 0 #f2f2f2;
   border-radius: 3px;
-  bottom: 10px;
+  bottom: 8px;
   display: none;
-  height: 40px;
+  height: 42px;
   position: fixed;
   cursor: pointer;
   z-index: 10;
-  right: 10px;
-  width: 40px;
+  right: 8px;
+  width: 42px;
 }
 .scrollup i {
   position: absolute;
